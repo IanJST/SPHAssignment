@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/ivDeclined"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/declined"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="Year : "
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvYearValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tvYear"
+                android:text="YearValue"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="Usage(Petabytes) : "
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/tvUsageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tvUsage"
+                android:text="UsageValue"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
